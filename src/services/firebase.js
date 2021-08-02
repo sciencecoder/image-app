@@ -25,3 +25,14 @@ export async function getUserByUserId(userId) {
 
   return user;
 }
+export async function getSuggestions(userId) {
+  const followers = await getUserByUserId(userId);
+  // get results where username/userId not-in (does not include?) any user in currentUser following
+  const result = await firebase.firestore().collection('users').where('userId', '!=', userId).get();
+  const userList = result.docs.map((item) => ({
+    ...item.data(),
+    docId: item.id,
+  }));
+  console.log(userList)
+  return userList;
+}

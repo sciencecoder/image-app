@@ -21,5 +21,6 @@ export default function useAuthListener() {
 
     return () => listener();
   }, [firebase]);
+  // user contains basic user data, uid, email, name, etc
   return { user };
 }
