@@ -1,7 +1,9 @@
 import Firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+
 // import { seedDatabase } from '../seed';
+// Firebase initialization 
 const config = {
   apiKey: 'AIzaSyAw5OpXNDahaEIe-oHXB6fKvNjVFtdNFv0',
   authDomain: 'experimental-315720.firebaseapp.com',
@@ -12,7 +14,7 @@ const config = {
   measurementId: 'G-V7DWXTD7KQ',
 };
 const firebase = Firebase.initializeApp(config);
-const FieldValue = Firebase.firestore;
+const { FieldValue } = Firebase.firestore;
 // fire once
 // seedDatabase(firebase);
 // console.log('firebase', firebase);

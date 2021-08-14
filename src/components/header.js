@@ -72,7 +72,7 @@ export default function Header() {
                 <div className="leex items-center cursor-pointer">
                   <Link to={`p/${user.displayName}`}>
                     <img
-                      className="rounded-full"
+                      className="rounded-full w-16"
                       src={`images/avatars/${user.displayName}.jpg`}
                       alt={`${user.displayName} profile`}
                     />

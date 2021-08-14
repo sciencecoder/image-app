@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   future: {
     removeDepricatedGapUtilities: true,
@@ -6,9 +8,9 @@ module.exports = {
     content: ['./src/**/*.js', './src/**/**/*.js'],
   },
   theme: {
-    // fill: (theme) => ({
-    //   red: theme('colors.red.primary')
-    // }),
+    fill: (theme) => ({
+      red: theme('colors.red.primary')
+    }),
     extend: {
       colors: {
         white: '#ffffff',
@@ -28,6 +30,7 @@ module.exports = {
           primary: '#ed4956',
         },
       },
+     
     },
   },
 
