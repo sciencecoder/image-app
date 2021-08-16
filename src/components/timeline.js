@@ -13,7 +13,7 @@ export default function TimeLine() {
   // if needed else where, refactor the code
   useEffect(() => {
     async function getPosts() {
-      console.log('attempting to get posts');
+      // console.log('attempting to get posts');
       if(following?.length > 0) {
         const posts =  await getImagePosts(following);
         posts.sort((a, b) => a.dateCreated-b.dateCreated)
@@ -23,7 +23,7 @@ export default function TimeLine() {
     }
     getPosts();
   }, [following]);
-  console.log(photos);
+
 
   return (
     <div className="p-4 bg-white">
