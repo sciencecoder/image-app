@@ -16,7 +16,7 @@ export default function Header() {
             <h1 className=" flex w-full h-full">
               <Link to={ROUTES.DASHBOARD}>
                 <img
-                  src="images/logo.png"
+                  src="/images/logo.png"
                   className="w-9/12 h-full"
                   aria-label="Imagegram logo"
                 />
@@ -69,11 +69,11 @@ export default function Header() {
                     />
                   </svg>
                 </button>
-                <div className="leex items-center cursor-pointer">
+                <div className="flex items-center cursor-pointer">
                   <Link to={`p/${user.displayName}`}>
                     <img
                       className="rounded-full w-16"
-                      src={`images/avatars/${user.displayName}.jpg`}
+                      src={`/images/avatars/${user.displayName}.jpg`}
                       alt={`${user.displayName} profile`}
                     />
                   </Link>

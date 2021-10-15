@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* this file is not compiled tailwind and postcss, in package.json commands, so useless!*/
+body {
+  background: blue;
+}

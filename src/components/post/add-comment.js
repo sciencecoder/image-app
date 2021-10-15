@@ -14,7 +14,7 @@ export default function AddComment({
   // const user = useContext(UserContext);
   //  const displayName = user.displayName;
   const { displayName } = useContext(UserContext);
- console.log(comment.length)
+
   const handleSubmitComment = (event) => {
     event.preventDefault();
     setComments([{ comment, displayName }, ...comments]);

@@ -11,7 +11,7 @@ export default function Comments({
   commentInput,
 }) {
   const [comments, setComments] = useState(allComments);
-  console.log(comments)
+ 
   return (
     <>
       <div className="p-4 pt-1 pb-4">

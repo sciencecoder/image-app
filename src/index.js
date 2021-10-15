@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { firebaseContext } from './context/firebase';
 import { firebase, FieldValue } from './lib/firebase';
+// app.css is compiled tailwind and custom tailwind.css file with postcss
 import './styles/app.css';
 
 ReactDOM.render(
