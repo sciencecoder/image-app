@@ -25,6 +25,7 @@ export async function getUserByUserId(userId) {
 
   return user;
 }
+
 export async function getSuggestions(userId, following = []) {
   // get results where username/userId not-in (does not include?) any user in currentUser following
   const result = await firebase
@@ -65,6 +66,7 @@ export async function updateUserFollowing(
       console.log('error caught');
     });
 }
+
 export async function updateFollowedUserFollowers(
   userId,
   followedUserId,
@@ -80,6 +82,7 @@ export async function updateFollowedUserFollowers(
         : FieldValue.arrayUnion(userId),
     });
 }
+
 export async function getImagePosts(following) {
   // I think the shape of the photo data could be refactored so that all photos by same user are under the same collection/document
   const response = await firebase
